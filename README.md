@@ -4,7 +4,17 @@ This is a demo project that uses python - request and behave to scrape the curre
 
 Requirements to run :
 
-Python 3.7 above behave==1.2.6 requests==2.23.0 lxml==4.5.0, idna==2.9, urlib3==1.25.9
+Python 3.7 above
+
+behave==1.2.6
+
+requests==2.23.0
+
+lxml==4.5.0
+
+idna==2.9
+
+urlib3==1.25.9
 
 Steps for installation:
 
