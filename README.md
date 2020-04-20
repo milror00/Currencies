@@ -1,6 +1,6 @@
 # Currencies
 
-This is a demo project that uses python - request and behave to scrape the currencies published by yahoo finance.
+This is a demo project that uses python - request and behave to scrape the currencies published by yahoo finance. This is a demo to demonstrate the skills I have for scraping. This code is not to be used for any reason commercial or personally other than to demonstrate the approach to scraping.
 
 Requirements to run :
 
@@ -23,19 +23,28 @@ Feature: To scrape the currencies from the yahoo finance page
   Scenario Outline: scrape a named currency
 
   Given I am on the yahoo world indices page
+  
   When I scrape the named currency <name>
+  
   Then I output the data to the std out
+  
 
   Examples:
+  
     |name       |
+    
     |BTCUSD=X   |
+
 
 
   Scenario: scrape all currencies
 
   Given I am on the yahoo world indices page
+  
   When I scrape all the currencies
+  
   Then I output the data to the std out
+  
 
 
 
