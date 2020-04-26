@@ -1,12 +1,8 @@
 import logging
-import lxml
 import requests
-import urllib3
-from io import BytesIO
-
+import lxml
 from bs4 import BeautifulSoup
-from lxml import etree
-from lxml import html
+
 
 
 
@@ -26,7 +22,6 @@ Modify:
 class YahooCurrencies():
 
     def __init__(self):
-        logging.getLogger("urllib3").setLevel(logging.WARNING)
         self.url = 'https://finance.yahoo.com/currencies'
 
     def getURL(self):
