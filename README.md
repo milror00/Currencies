@@ -1,4 +1,6 @@
-https://travis-ci.com/milror00/Currencies.svg?branch=master
+
+### Status
+[![Build Status](https://travis-ci.com/milror00/Currencies.png)](https://travis-ci.com/milror00/Currencies.svg?branch=master)
 
 # Currencies
 
