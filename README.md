@@ -12,11 +12,11 @@ Requirements to run :
 Steps for installation:
 
 1. git clone repo
-1. pip install -r requirements.txt
-1. run script
+1. pip install -r requirements.txt or poetry install
+1. run the yahoo_currencies_scraper.py
 
 
-Results:
+Results
 
 |Symbol    |Name                |Last Price     |Change         |%change        |
 |----------|-------------------|---------------|---------------|---------------|
