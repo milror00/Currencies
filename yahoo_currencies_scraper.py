@@ -1,24 +1,22 @@
-import logging
 import requests
 import lxml
 from bs4 import BeautifulSoup
-
-
-
 
 """
 Class description:
 Get financial currency data from Yahoo finance and save it to db.
 
 Author:
-	Rob Milroy
-	
+Rob Milroy
+
 Website:
-	https://pyscrape.com
-	
+https://pyscrape.com
+
 Modify:
-	2020-04-26
+2020-04-26
 """
+
+
 class YahooCurrencies():
 
     def __init__(self):
@@ -37,7 +35,7 @@ class YahooCurrencies():
     def getAllTableRows(self):
         # all table rows
         tables = self.page_bf.findChildren('table')
-        rows = tables[0].findChildren(['th','tr'])
+        rows = tables[0].findChildren(['th', 'tr'])
         return rows
 
     def getAllCurrencies(self):
@@ -57,18 +55,20 @@ class YahooCurrencies():
                 break
         return results
 
+
 if __name__ == '__main__':
     currencies = YahooCurrencies()
     results = currencies.getAllCurrencies()
-    #headers
+    # headers
     print('|{0: <10}|{1: <20}|{2: <15}|{3: <15}|{4: <15}|'.format(
         'Symbol',
         'Name',
         'Last Price',
         'Change',
         '%change'))
-    print('|----------|-------------------|---------------|---------------|---------------|')
-    #data
+    print('|----------|-------------------|---------------|---------------' +
+          '|---------------|')
+    # data
     for currency in results:
         print('|{0: <10}|{1: <20}|{2: <15}|{3: <15}|{4: <15}|'.format(
             currency['symbol'],
@@ -77,4 +77,3 @@ if __name__ == '__main__':
             currency['change'],
             currency['%change'],
         ))
-
