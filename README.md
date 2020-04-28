@@ -1,3 +1,5 @@
+https://travis-ci.com/milror00/Currencies.svg?branch=master
+
 # Currencies
 
 This is a demo project that uses python - request and behave to scrape the currencies published by yahoo finance. This is a demo to demonstrate the skills I have for scraping. This code is not to be used for any reason commercial or personally other than to demonstrate the approach to scraping.
